@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video height="500" poster="imagens/capa.png" controls> 
+<!-- No meu caso usei "height" por que o vídeo era maior de altura do que de largura, se fosse para limitar a largura, usaria "width". -->
+        <source src="midia/video-web.mp4" type="video/mp4">
+        <source src="midia/video-web.m4v" type="video/mp4">
+        <source src="midia/video-web.webm" type="video/webm">
+        <source src="midia/video-web.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatiblidade com reprodução de vídeos. <a href="midia/video-web.mp4" download="video-web.mp4" type="video/mp4">Baixe o vídeo aqui.</a></p>
+<!-- Compatiblidades: mp4 mk4 webm ogv -->
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gqrySQQzvvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/72806672?h=0b68ab0271&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
